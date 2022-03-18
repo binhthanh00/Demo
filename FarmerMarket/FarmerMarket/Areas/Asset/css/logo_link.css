@@ -1,0 +1,13 @@
+﻿.logo_link {
+    margin-left: 15px;
+    color: #064273;
+    font-size: 0;
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-image: url(https://haisan.online/wp-content/themes/signal/images/logo-haisan-white.svg);
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+}

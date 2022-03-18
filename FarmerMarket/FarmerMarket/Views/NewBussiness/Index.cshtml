@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/wwwroot/css/tindoanhnghiep.css">
+    }
+<div class="wrapper">
+
+    <div class="container-content container-fluid">
+        <div class="container-content-nav">
+            <div class="row container-content-nav-align">
+                <div class="col-lg-3 no-marign no-padding">
+                    <div class="col-menu-cat">
+                        <i class="fa-solid fa-align-left"></i>
+                        <span>Danh mục sản phẩm</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 container-content-nav-right-align">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="@Url.Action("Index","Home")">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Introduce")">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","KnowledgeSeafood")">Kiến thức hải sản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","NewBussiness")">Tin doanh nghiệp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Recruit")">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Contact")">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="bussiness">
+        <p>Home -> Tin doanh nghiệp</p>
+        <hr>
+        <h4>TIN DOANH NGHIỆP</h4>
+        <p>Tin doanh nghiệp</p>
+        <div class="col-lg-4" style="height:auto; padding: 20px 10px; box-shadow: 1px 7px 11px -4px #7f8fa6;">
+            <div class="block-image">
+                <img class="wp-image-133230 aligncenter" src="https://haisan.online/wp-content/uploads/2022/01/haisanonline-banner-1.jpg" alt="haisan.online banner" />
+
+            </div>
+            <p style="color: blue;font-weight: bold;">Ra mắt website haisan.online – Mục tiêu trở thành số 1 thị trường bán lẻ hải sản tại Việt Nam</p>
+            <p>Tháng 11/2022, Cty TNHH BigTown Việt Nam cho ra mắt website bán lẻ trực tuyến sản phẩm hải...</p>
+            <a href="#" class="btn_readmore">Chi tiết</a>
+        </div>
+    </div>
+

@@ -1,0 +1,177 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="~/wwwroot/css/Reset.css">
+    <link rel="stylesheet" href="~/wwwroot/css/Home.css">
+    <link rel="stylesheet" href="~/wwwroot/fonts/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    @RenderSection("styles", required: false)
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div class="container-fluid no-marign no-padding">
+        <div class="header  no-padding no-marign">
+            @{ 
+                Html.RenderAction("_Header", "Base");
+            }
+
+        </div>
+        @RenderBody()
+
+        <!-- LỢI ÍCH -->
+        <footer class="page-footer" id="page-footers">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-3 company-info ">
+                        <a href="/" class="brand-logo">
+                            Signalife
+                        </a>
+
+                        <p class="addr"><i class="fa fa-map-marker" aria-hidden="true"></i>20 ngõ 28 Nguyễn Khả Trạc, P. Mai Dịch, Q. Cầu Giấy, TP Hà Nội</p>
+                        <p class="hotline"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0355 370 347">0355 370 347</a><span>|</span><a href="tel:0355 370 347">0355 370 347</a></p>
+                        <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:haisan.online2022@gmail.com">haisan.online2022@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="widget widget-footer">
+                            <div class="widget-title">
+                                Về chúng tôi
+                            </div>
+                            <div class="widget-content">
+                                <ul id="menu-ve-chung-toi" class="footer-menu">
+                                    <li id="menu-item-299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="https://haisan.online/gioi-thieu">Giới thiệu</a></li>
+                                    <li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="https://haisan.online/lien-he">Liên hệ</a></li>
+                                    <li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="https://haisan.online/tuyen-dung">Tuyển dụng</a></li>
+                                    <li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-237"><a href="https://haisan.online/tin-doanh-nghiep">Tin doanh nghiệp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2  col-6">
+                        <div class="widget widget-footer">
+                            <div class="widget-title">
+                                Hỗ trợ khách hàng
+                            </div>
+                            <div class="widget-content">
+                                <ul id="menu-ho-tro-khach-hang" class="footer-menu">
+                                    <li id="menu-item-301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-301"><a href="https://haisan.online/huong-dan-thanh-toan">Hướng dẫn thanh toán</a></li>
+                                    <li id="menu-item-133336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133336"><a href="https://haisan.online/huong-dan-dat-hang">Hướng dẫn đặt hàng</a></li>
+                                    <li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://haisan.online/cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2  col-12 pr-md-0">
+                        <div class="widget widget-footer">
+                            <div class="widget-title">
+                                Chính sách &amp; Điều khoản
+                            </div>
+                            <div class="widget-content">
+                                <ul id="menu-chinh-sach" class="footer-menu">
+                                    <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304"><a href="https://haisan.online/chinh-sach-van-chuyen">Chính sách vận chuyển</a></li>
+                                    <li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a href="https://haisan.online/chinh-sach-bao-hanh">Chính sách đổi trả hàng</a></li>
+                                    <li id="menu-item-133334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-133334"><a href="https://haisan.online/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                    <li id="menu-item-133333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133333"><a href="https://haisan.online/chinh-sach-dieu-khoan-su-dung">Chính sách điều khoản sử dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  col-12">
+                        <div class="widget widget-footer">
+                            <div class="widget-title">
+                                Kết nối với chúng tôi
+                            </div>
+                            <div class="widget-content">
+                                <ul class="social-link">
+                                    <li><a href="https://www.facebook.com/haisan.online2022/" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/haisan.online/" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/haisan_online" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.pinterest.com/haisanonline/" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget widget-footer mt-3 widget-subcribe">
+                            <div class="widget-title">
+                                Đăng ký nhận tin
+                            </div>
+                            <form action="" class="form-inline subcribe-form">
+                                <input type="text" class="form-control" placeholder="Nhập địa chỉ email">
+                                <button type="submit" class="btn btn-submit">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-3">
+                <div class="container">
+                    <p>
+                        <a href="https://www.dmca.com/Protection/Status.aspx?ID=d795c809-924a-461b-bc70-1fa823629d59&amp;refurl=https://haisan.online/" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca_protected_sml_120l.png?ID=d795c809-924a-461b-bc70-1fa823629d59" alt="DMCA.com Protection Status"></a>
+                        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
+                        </script> - © Bản quyền <a href="/">Haisan.online</a> - 2022 All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- JavaScript Bundle with Popper -->
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 700,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 600,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+            ]
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+
+</html>

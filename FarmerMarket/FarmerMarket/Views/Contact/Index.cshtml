@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/wwwroot/css/category.css">
+    <link rel="stylesheet" href="~/wwwroot/css/contact.css">
+    <link rel="stylesheet" href="~/wwwroot/css/sea-knowledge.css">
+}
+<div class="wrapper">
+    <div class="container-content container-fluid">
+        <div class="container-content-nav">
+            <div class="row container-content-nav-align">
+                <div class="col-lg-3 no-marign no-padding">
+                    <div class="col-menu-cat">
+                        <i class="fa-solid fa-align-left"></i>
+                        <span>Danh mục sản phẩm</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 container-content-nav-right-align">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="@Url.Action("Index","Home")">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Introduce")">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","KnowledgeSeafood")">Kiến thức hải sản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","NewBussiness")">Tin doanh nghiệp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Recruit")">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Contact")">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br>
+
+
+
+    </div>
+    <div class="block-product">
+        <p class="breadcrumb_last">
+            Home <i class="fa-solid fa-angles-right"></i> <span>Liên hệ</span>
+        </p>
+
+    </div>
+    <div class="page-content">
+        <h1 class="page-title">
+            Liên hệ
+        </h1>
+        <div class="contact-info row">
+            <div class="col-md-4 col-border">
+                <p>Hợp tác <a style="margin-left: 5px;" href="mailto:haisan.online2022@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>haisan.online2022@gmail.com</a></p>
+                <p>
+                    Hành chính
+                    <a style="margin-left: 5px;" href="tel:0355 370 347">
+                        <i class="fa fa-phone" aria-hidden="true"></i> 0355 370 347
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> Email <a href="mailto:haisan.online2022@gmail.com">haisan.online2022@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 20 ngõ 28 Nguyễn Khả Trạc, P. Mai Dịch, Q. Cầu Giấy, TP Hà Nội
+                </p>
+            </div>
+        </div>
+        <div class="d-flex mt-3 flex-wrap">
+            <div class="col-md-6  col-form ">
+                <form action="" class="contact-form">
+
+                    <div class="form-row">
+                        <div class="form-group  col-md-6">
+                            <label for="input-fullname">Họ tên</label>
+                            <input id="input-fullname" type="text" name="fullname" placeholder="Nhập tên" class="form-control" required="required">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label for="input-numberphone">Số điện thoại</label>
+                            <input id="input-numberphone" type="text" name="numberphone" placeholder="SĐT liên hệ" class="form-control" required="" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group  col-md-12">
+                            <label for="input-email">Email</label>
+                            <input id="input-email" type="email" name="email" placeholder="Nhập địa chỉ email" class="form-control" required="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group  col-md-12">
+                            <label for="input-content">Nội dung</label>
+                            <textarea name="content" class="form-control" id="input-content" rows="3" placeholder="Nhập nội dung cần liên hệ ..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-submit">
+                        Gửi liên hệ <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-6 pl-0 contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6978417974046!2d105.77517101398182!3d21.044772785989654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134550bb931ad81%3A0x5439dd5050551c53!2sHaisan.online!5e0!3m2!1sen!2s!4v1642761146507!5m2!1sen!2s"
+                        width="600" height="390" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+</div>
+

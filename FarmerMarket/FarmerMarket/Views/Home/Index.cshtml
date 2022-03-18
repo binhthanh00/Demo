@@ -1,0 +1,999 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+<div class="wrapper">
+
+    <div class="container-content container-fluid">
+        <div class="container-content-nav">
+            <div class="row container-content-nav-align">
+                <div class="col-lg-3 no-marign no-padding">
+                    <div class="col-menu-cat">
+                        <i class="fa-solid fa-align-left"></i>
+                        <span>Danh mục sản phẩm</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 container-content-nav-right-align">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="@Url.Action("Index","Home")">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Introduce")">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","KnowledgeSeafood")">Kiến thức hải sản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","NewBussiness")">Tin doanh nghiệp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Recruit")">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Contact")">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-content-nav-right  row">
+                <div class="col-lg-3 category-block">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <i class="fa-solid fa-shrimp"></i> Tôm biển
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-fish"></i> Cá biển</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-crab"></i> Cua - ghẹ biển</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <i class="fa-solid fa-squid"></i> Mực - Bạch tuộc
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-fish"></i> Ngao - Sò - Ốc -
+                                Hàu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <i class="fa-solid fa-shrimp"></i> Hải sản đông lạnh
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-fish"></i> Hải sản nhập khẩu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                Gia vị sốt
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Đồ khô</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-9 no-padding">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner banner-block">
+                            <div class="carousel-item active">
+                                <img src="~/wwwroot/images/banner/1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/wwwroot/images/banner/2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/wwwroot/images/banner/3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/wwwroot/images/banner/4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <br>
+        <div class="row list-featured-text">
+            <div class="col-md-3 col-6" style="" tabindex="-1" role="option" aria-describedby="slick-slide20">
+                <div class="inner">
+                    <span class="icon">
+                        <img src="https://haisan.online/wp-content/themes/signal/images/icons/icon-delivery.svg"
+                             alt="Vận chuyển">
+                    </span>
+                    <h3 class="heading-title">
+                        Miễn phí giao hàng
+                    </h3>
+                    <p class="sub">
+                        Miễn phí vận chuyển tất cả đơn đặt hàng &gt; 1 triệu đồng.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" style="" tabindex="-1" role="option" aria-describedby="slick-slide21">
+                <div class="inner">
+                    <span class="icon">
+                        <img src="https://haisan.online/wp-content/themes/signal/images/icons/icon-support.svg"
+                             alt="Tư vấn">
+                    </span>
+                    <h3 class="heading-title">
+                        Tư vấn miễn phí 24/7
+                    </h3>
+                    <p class="sub">
+                        Đội ngũ tư vấn, CSKH nhiệt tình có hiểu biết sâu về sản phẩm
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" style="" tabindex="-1" role="option" aria-describedby="slick-slide22">
+                <div class="inner">
+                    <span class="icon">
+                        <img src="https://haisan.online/wp-content/themes/signal/images/icons/icon-mastercard.svg"
+                             alt="Thanh toán">
+                    </span>
+                    <h3 class="heading-title">
+                        Hải sản tươi sống
+                    </h3>
+                    <p class="sub">
+                        Cam kết hàng tươi sống khi đến tay khách hàng.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" style="" tabindex="-1" role="option" aria-describedby="slick-slide23">
+                <div class="inner">
+                    <span class="icon">
+                        <img src="https://haisan.online/wp-content/themes/signal/images/icons/icon-guarantee.svg"
+                             alt="Đổi trả hàng hóa">
+                    </span>
+                    <h3 class="heading-title">
+                        Đổi trả hàng hóa
+                    </h3>
+                    <p class="sub">
+                        Đổi trả hàng hóa nếu như sản phẩm không đúng như mô tả
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="suggest-product">
+            <div class="row slick">
+                <h2 class="s-title">Sản phẩm giá tốt</h2>
+                <div class="slick-product  row responsive autoplay multiple-items ">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick no-padding">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick ">
+                        <div class="product-img-slick no-padding ">
+                            <img src="~/wwwroot/images/product/ca-com-1-150x150.jpg" class="product-img-slick-style">
+                        </div>
+                        <div class="product-name-slick">
+                            <a href="./productDetail.html">Cá cơm</a>
+
+                        </div>
+                        <div class="product-info">
+                            <span class="product-price">
+                                170,000 <sup>đ</sup> / <span class="unit">1kg</span>
+                            </span>
+                        </div>
+                        <a href="#" class="add-to-cart-link">
+                            Thêm vào giỏ <span class="icon-cart"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="banner-middle">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-6 col-md-6 ">
+                        <a href="" class="banner-item" target="_blank"><img banner1_image="414" src="https://haisan.online/wp-content/uploads/2022/01/banner-middle-2-e1641738782125.jpg"></a>
+                    </div>
+                    <div class=" col-lg-6 col-md-6">
+                        <a href="" class="banner-item" target="_blank"><img banner1_image="420" src="https://haisan.online/wp-content/uploads/2022/01/banner-middle-1.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- dANH MỤC SẢN PHẨM -->
+
+<div class="home-product">
+    <div class="wrapper">
+        <div class="widget widget-product">
+            <div class="widget-header">
+                <h2 class="widget-title">
+                    <a href="#">
+                        Tôm biển
+                    </a>
+                </h2>
+                <a href="#" class="readmore ml-auto">
+                    Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="widget-content">
+                <div class="list-product row">
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-cang-xanh" class="product-thumbnail" title="Tôm Càng Xanh">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-cang-xanh" title="Tôm Càng Xanh">
+                                    Tôm Càng Xanh
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-cang-xanh" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="#" class="product-thumbnail" title="Tôm Thẻ">
+                                <img src="https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1.jpg 800w"
+                                     sizes="(max-width: 160px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="#" title="Tôm Thẻ">
+                                    Tôm Thẻ
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-the" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="#" class="product-thumbnail" title="Tôm He">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-he-4-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-he-4-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="#" title="Tôm He">
+                                    Tôm He
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="#" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="#" class="product-thumbnail" title="Tôm Rảo">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-rao" title="Tôm Rảo">
+                                    Tôm Rảo
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-rao" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-bac" class="product-thumbnail" title="Tôm Bạc">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-bac" title="Tôm Bạc">
+                                    Tôm Bạc
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-bac" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-the-chan-trang" class="product-thumbnail" title="Tôm Thẻ Chân Trắng">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-the-chan-trang" title="Tôm Thẻ Chân Trắng">
+                                    Tôm Thẻ Chân Trắng
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-the-chan-trang" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-sat" class="product-thumbnail" title="Tôm Sắt">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-sat" title="Tôm Sắt">
+                                    Tôm Sắt
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-sat" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-hum" class="product-thumbnail" title="Tôm Hùm">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-hum" title="Tôm Hùm">
+                                    Tôm Hùm
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-hum" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-dat" class="product-thumbnail" title="Tôm Đất">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-dat-3.jpg 600w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-dat" title="Tôm Đất">
+                                    Tôm Đất
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1 kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-dat" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-mu-ni" class="product-thumbnail" title="Tôm Mũ Ni">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-mu-ni" title="Tôm Mũ Ni">
+                                    Tôm Mũ Ni
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-mu-ni" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- cua ghẹ -->
+        <div class="widget widget-product">
+            <div class="widget-header">
+                <h2 class="widget-title">
+                    <a href="#">
+                        Cua - Ghẹ biển
+                    </a>
+                </h2>
+                <a href="#" class="readmore ml-auto">
+                    Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="widget-content">
+                <div class="list-product row">
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-cang-xanh" class="product-thumbnail" title="Tôm Càng Xanh">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-cang-xanh-2-min.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-cang-xanh" title="Tôm Càng Xanh">
+                                    Tôm Càng Xanh
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-cang-xanh" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="#" class="product-thumbnail" title="Tôm Thẻ">
+                                <img src="https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-the-1-1.jpg 800w"
+                                     sizes="(max-width: 160px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="#" title="Tôm Thẻ">
+                                    Tôm Thẻ
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-the" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="#" class="product-thumbnail" title="Tôm He">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-he-4-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-he-4-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-he-4.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="#" title="Tôm He">
+                                    Tôm He
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="#" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="#" class="product-thumbnail" title="Tôm Rảo">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-rao-3.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-rao" title="Tôm Rảo">
+                                    Tôm Rảo
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-rao" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-bac" class="product-thumbnail" title="Tôm Bạc">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-bac-1-1.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-bac" title="Tôm Bạc">
+                                    Tôm Bạc
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-bac" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-the-chan-trang" class="product-thumbnail" title="Tôm Thẻ Chân Trắng">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-the-chan-trang-3.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-the-chan-trang" title="Tôm Thẻ Chân Trắng">
+                                    Tôm Thẻ Chân Trắng
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-the-chan-trang" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-sat" class="product-thumbnail" title="Tôm Sắt">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-sat-1.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-sat" title="Tôm Sắt">
+                                    Tôm Sắt
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-sat" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-hum" class="product-thumbnail" title="Tôm Hùm">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-hum-2.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-hum" title="Tôm Hùm">
+                                    Tôm Hùm
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-hum" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-dat" class="product-thumbnail" title="Tôm Đất">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-dat-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-dat-3.jpg 600w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-dat" title="Tôm Đất">
+                                    Tôm Đất
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1 kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-dat" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="product">
+                            <a href="https://haisan.online/san-pham/tom-mu-ni" class="product-thumbnail" title="Tôm Mũ Ni">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-768x768.jpg 768w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/01/tom-mu-ni-3.jpg 800w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="product-title">
+                                <a href="https://haisan.online/san-pham/tom-mu-ni" title="Tôm Mũ Ni">
+                                    Tôm Mũ Ni
+                                </a>
+                            </h3>
+                            <div class="product-info">
+                                <span class="product-price">
+                                    1,000,000 <sup>đ</sup>
+                                    / <span class="unit">1kg</span>
+                                </span>
+                            </div>
+                            <a href="https://haisan.online/san-pham/tom-mu-ni" class="add-to-cart-link">
+                                Thêm vào giỏ <span class="icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LỢI ÍCH -->
+
+<div class="home-service">
+    <div class="wrapper">
+        <h2 class="s-title text-center">
+            03 lý do nên chọn haisan.online
+        </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="inner">
+                    <span class="icon">
+                        <i class="fa-solid fa-building"></i>
+                    </span>
+                    <h3 class="title">
+                        Tươi sống chất lượng nhất
+                    </h3>
+                    <p class="sub">
+                        Cam kết hải sản đạt luôn tươi sống, chất lượng tốt nhất được nhập từ các nguồn uy tín.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="inner">
+                    <span class="icon">
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </span>
+                    <h3 class="title">
+                        Giao hàng 30 phút
+                    </h3>
+                    <p class="sub">
+                        Cam kết giao hàng nhanh nhất đến khách hàng thông qua hệ thống mạng lưới cửa hàng nhiều điểm.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="inner">
+                    <span class="icon">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                    </span>
+                    <h3 class="title">
+                        Đổi trả hàng
+                    </h3>
+                    <p class="sub">
+                        Chính sách đổi trả hàng được áp dụng nếu chất lượng sản phẩm không như cam kết.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TIN TỨC -->
+
+<div class="featured-news">
+    <div class="wrapper">
+        <div class="s-header">
+            <h2 class="s-title">
+                <a href="/kien-thuc">Kiến thức</a>
+            </h2>
+            <a href="/kien-thuc" class="more-link">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="post big-post">
+                            <a href="https://haisan.online/ca-ngu-bao-126442.html" class="post-thumbnail">
+                                <img width="300" height="180" src="https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-300x180.jpg" class="attachment-medium size-medium wp-post-image" alt="cá ngừ bào" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-300x180.jpg 300w, https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-290x175.jpg 290w, https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12.jpg 768w"
+                                     sizes="(max-width: 300px) 100vw, 300px">
+                            </a>
+                            <h3 class="post-title">
+                                <a href="https://haisan.online/ca-ngu-bao-126442.html">
+                                    Cá Ngừ Bào | Thông Tin Dinh Dưỡng, Giá Cả, Cách Sử Dụng
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Chắc hẳn ai cũng đã từng nghe quá cá ngừ bào hoặc cá bào. Hay cá cứng như đá. Tuy nhiên cũng không ít người nhầm lẫn loại cá này với những thực phẩm khác....
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="post post-row">
+                            <a href="https://haisan.online/oc-gai-nuong-muoi-ot-138583.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-6-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                            </a>
+                            <h3 class="post-title">
+                                <a href="https://haisan.online/oc-gai-nuong-muoi-ot-138583.html">
+                                    Mách Bạn Cách Làm Ốc Gai Nướng Muối Ớt Tại Nhà Siêu Đơn Giản
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="post post-row">
+                            <a href="https://haisan.online/tom-he-119175.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-he-25-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                            </a>
+                            <h3 class="post-title">
+                                <a href="https://haisan.online/tom-he-119175.html">
+                                    Tôm He: Thông Tin Chi Tiết Đặc Điểm, Giá Cả, Cách Chế Biến
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="post post-row">
+                            <a href="https://haisan.online/oc-mong-tay-lam-gi-ngon-139239.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11.jpg 768w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h3 class="post-title">
+                                <a href="https://haisan.online/oc-mong-tay-lam-gi-ngon-139239.html">
+                                    Ốc Móng Tay Làm Gì Ngon? Tổng Hợp 06 Cách Chế Biến Dành Cho Bạn
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="post post-row">
+                            <a href="https://haisan.online/oc-mong-tay-xao-sa-ot-139153.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                            </a>
+                            <h3 class="post-title">
+                                <a href="https://haisan.online/oc-mong-tay-xao-sa-ot-139153.html">
+                                    Ốc Móng Tay Xào Sả Ớt | Công Thức Chế Biến Tại Nhà Siêu Chuẩn
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 list-post-medium">
+                <div class="post medium-post ">
+                    <a href="https://haisan.online/oc-mong-tay-xao-rau-muong-138921.html" class="post-thumbnail">
+                        <img width="300" height="200" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5-300x200.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5-263x175.jpg 263w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5.jpg 768w"
+                             sizes="(max-width: 300px) 100vw, 300px">
+                    </a>
+                    <h3 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-rau-muong-138921.html">
+                            Ốc Móng Tay Xào Rau Muống | Công Thức Chế Biến Ai Cũng Ghiền
+                        </a>
+                    </h3>
+                </div>
+                <div class="post medium-post ">
+                    <a href="https://haisan.online/oc-mong-tay-xao-me-chua-ngot-138923.html" class="post-thumbnail">
+                        <img width="300" height="204" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2-300x204.jpg" class="attachment-medium size-medium wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2-300x204.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2-258x175.jpg 258w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2.jpg 768w"
+                             sizes="(max-width: 300px) 100vw, 300px">
+                    </a>
+                    <h3 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-me-chua-ngot-138923.html">
+                            Bật Mí Cách Làm Ốc Móng Tay Xào Me Chua Ngọt Tại Nhà
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

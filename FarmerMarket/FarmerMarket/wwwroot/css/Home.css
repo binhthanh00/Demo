@@ -1,0 +1,644 @@
+    .wrapper {
+        max-width: 82%;
+        margin: 0 auto;
+    }
+    
+    .header {
+        height: 90px;
+        width: 100%;
+        background-color: var(--bg-color);
+        align-items: center;
+    }
+    
+    .header-center {
+        max-width: 85% !important;
+        margin: 0 auto !important;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .logo_link {
+        margin-left: 15px;
+        color: #fff;
+        font-size: 0;
+        text-transform: uppercase;
+        display: block;
+        width: 200px;
+        height: 50px;
+        background-image: url(https://haisan.online/wp-content/themes/signal/images/logo-haisan-white.svg);
+        background-size: 100% auto;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: .5rem 1rem;
+    }
+    
+    .nav-item-hotline {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-item-hotline i {
+        font-size: 20px;
+        color: white;
+    }
+    
+    .small-text {
+        line-height: .5;
+        display: block;
+        font-size: 10px;
+        margin-bottom: 3px;
+        color: #064273;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .shopping-cart-nav .nav-item-hotline a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .shopping-cart-nav .shopping-cart {
+        padding-right: 0;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        padding: 0;
+        background-color: #015c8d;
+        border-radius: 40px;
+        background: url(https://haisan.online/wp-content/themes/signal/images/icons/icon-cart.svg);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: 50%;
+    }
+    
+    .shopping-cart-nav .shopping-cart .number {
+        width: 18px;
+        height: 18px;
+        background-color: #ed1c24;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -4px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    
+    .container-content-nav-align {
+        align-items: center;
+        height: auto;
+    }
+    
+    .col-menu-cat {
+        background-color: var(--bg-color-bold);
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        height: 100%;
+        padding: 14px 0px;
+    }
+    
+    .col-menu-cat i {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+    
+    .container-content-nav-right-align .nav .nav-item .nav-link {
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    
+    .container-content-nav-right .nav .nav-item .nav-link {
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    
+    .category-block {
+        box-shadow: 1px 7px 11px -4px #7f8fa6;
+    }
+    
+    .banner-block {
+        width: 92% !important;
+        height: 100%;
+        margin: 0 auto !important;
+        padding: 0px !important;
+    }
+    
+    .banner-block .carousel-item img {
+        height: 350px !important;
+        object-fit: cover;
+    }
+    
+    .carousel-control-prev-icon {
+        color: var(--text-color) !important;
+    }
+    
+    .list-featured-text .col-md-3 {
+        border-right: 1px dashed #e1e8ee;
+    }
+    
+    .inner {
+        position: relative;
+        padding: 15px;
+        padding-left: 60px;
+    }
+    
+    .inner .icon {
+        display: block;
+        width: 50px;
+        position: absolute;
+        top: 15px;
+        left: 0;
+    }
+    
+    .inner .heading-title {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    
+    .inner .sub {
+        color: #7f8fa4;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    
+    .suggest-product {
+        padding: 15px 0 !important;
+    }
+    
+    .suggest-product .slick {
+        /* overflow: hidden; */
+        background: linear-gradient(90deg, #7fcdff, #1da2d8 35%, #064273);
+        /* padding: 15px 5px 30px; */
+        border-radius: 15px;
+        margin: 0;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    
+    .suggest-product .slick:before {
+        content: "";
+        position: absolute;
+        width: 217px;
+        height: 183px;
+        background-image: url(https://haisan.online/wp-content/themes/signal/images/mask-combo.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .suggest-product .contain-inner:before {
+        display: block;
+        transform: rotate(82deg);
+        top: 16px;
+        right: -30px;
+    }
+    
+    .suggest-product .slick .s-title {
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    .slick-product {
+        z-index: 10;
+        width: 100%;
+    }
+    
+    .product-img-slick {
+        width: 100%;
+    }
+    
+    .style_product-slick {
+        background-color: #fff;
+        padding: 10px !important;
+    }
+    
+    .product-img-slick img {
+        width: 90%;
+    }
+    
+    .product-name-slick a {
+        color: rgb(0, 0, 0);
+        text-align: center !important;
+        display: block;
+        font-weight: 500;
+    }
+    
+    .product-name-slick a:hover {
+        color: var(--text-color);
+    }
+    
+    .slick-product.row.responsive.autoplay.multiple-items.slick-initialized.slick-slider.slick-dotted {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    
+    .slick-prev {
+        color: #000 !important;
+        margin-left: 100px !important;
+        left: -40px !important;
+        z-index: 20 !important;
+    }
+    
+    .slick-next {
+        right: 40px !important;
+        z-index: 11;
+    }
+    
+    .add-to-cart-link {
+        display: block;
+        text-align: center;
+    }
+    
+    .product-info {
+        text-align: center;
+    }
+    
+    .add-to-cart-link {
+        background: #f33a3a;
+        padding: 5px 15px;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 11px;
+        color: #fff;
+        display: flex;
+        margin-top: 8px;
+    }
+    
+    .add-to-cart-link:hover {
+        background: var(--bg-color-bold);
+        color: #fff;
+    }
+    
+    .icon-cart {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background-image: url(https://haisan.online/wp-content/themes/signal/images/icons/icon-cart-light.svg);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: 50%;
+        margin-left: auto;
+    }
+    
+    .banner-middle {
+        padding: 30px 0;
+        margin-bottom: 20px !important;
+    }
+    
+    .banner-middle img {
+        display: block;
+        width: 100%;
+    }
+    
+    a.banner-item {
+        display: block;
+        width: 100% !important;
+    }
+    
+    a.banner-item img {
+        width: 100% !important;
+        object-fit: cover;
+    }
+    
+    .home-product {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        width: 100%;
+    }
+    
+    .home-product .widget-product {
+        margin-bottom: 30px;
+    }
+    
+    .widget-product {
+        background-color: #fff;
+        padding: 20px 10px 15px;
+        border-radius: 5px;
+    }
+    
+    .widget-product .widget-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 0px solid #00347c;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 3px;
+        justify-content: space-between;
+    }
+    
+    .widget-product .widget-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+        position: relative;
+        line-height: 1;
+        padding: 0;
+    }
+    
+    .widget-product .widget-title a {
+        color: #064273;
+    }
+    
+    .widget-product .readmore {
+        color: #fff;
+        padding: 3px 10px;
+        display: block;
+        border-radius: 4px;
+        background-color: #1da2d8;
+    }
+    
+    .widget-product .row {
+        margin-left: 0;
+        margin-right: 0;
+        border-right: 1px solid #e1e8ee;
+    }
+    
+    .widget-product .col-md-2 {
+        padding: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    
+    .widget-product .product {
+        background-color: #fff;
+        overflow: hidden;
+    }
+    
+    .list-product .product {
+        border: 1px solid #e1e8ee;
+        border-right: none;
+        border-bottom: none;
+        padding: 10px;
+        transition: all .3s;
+        padding-bottom: 30px;
+    }
+    
+    .list-product .product-thumbnail {
+        margin-bottom: 10px;
+    }
+    
+    .product-thumbnail {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .product-thumbnail img {
+        text-align: center;
+        width: 100% !important;
+        object-fit: cover;
+        height: 170px;
+    }
+    
+    .list-product .product-title {
+        padding: 5px 10px;
+        line-height: 1.5;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .list-product .product-title a {
+        color: var(--text-color) !important;
+    }
+    
+    .list-product .product-info {
+        padding: 0 10px !important;
+    }
+    
+    .home-service {
+        padding: 50px 0 15px;
+    }
+    
+    .home-service .s-title {
+        font-size: 22px;
+        position: relative;
+        /* margin-top: 10px !important; */
+    }
+    
+    .s-title {
+        color: #00347c;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    
+    .home-service .s-title:after {
+        content: "";
+        width: 80px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -40px;
+        border-top: 3px solid #f33a3a;
+        margin-top: 10px;
+    }
+    
+    .home-service .inner {
+        position: relative;
+        padding-left: 50px;
+    }
+    
+    .home-service .icon {
+        color: #144b98;
+        position: absolute;
+        top: 10;
+        left: 0;
+        font-size: 35px;
+    }
+    
+    .home-service .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .home-service .sub {
+        color: #7f8fa4;
+    }
+    
+    .featured-news {
+        padding: 30px 0;
+    }
+    
+    .featured-news .s-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #7f8fa4;
+        padding-bottom: 15px;
+    }
+    
+    .featured-news .s-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        color: #000;
+        margin-bottom: 0;
+    }
+    
+    .featured-news .s-title a {
+        color: #000;
+    }
+    
+    .featured-news .s-header .more-link {
+        margin-left: auto;
+        color: #00347c;
+    }
+    
+    .featured-news .s-header .more-link i {
+        width: 20px;
+        height: 20px;
+        background-color: #7f8fa4;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        margin-left: 5px;
+    }
+    
+    .featured-news .col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+    .big-post .post-thumbnail {
+        margin-bottom: 10px;
+    }
+    
+    .post-thumbnail {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .post-thumbnail img {
+        object-fit: cover;
+        object-position: 50% 50%;
+        -o-object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .big-post .post-title {
+        font-size: 20px;
+    }
+    
+    .post-title a {
+        color: #000;
+    }
+    
+    .post-excerpt {
+        color: #7f8fa4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    .featured-news .post-row {
+        padding: 10px 0;
+        display: flex;
+    }
+    
+    .featured-news .post-row a {
+        display: block;
+        width: 200px;
+        padding-right: 10px;
+    }
+    
+    .post-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .page-footer {
+        background-color: #071831;
+        color: #fff;
+        padding-top: 50px;
+        font-size: 14px;
+    }
+    
+    .page-footer .brand-logo {
+        display: block;
+        margin-bottom: 15px;
+        width: 175px;
+        height: 45px;
+        background: url(https://haisan.online/wp-content/themes/signal/images/logo-haisan-white.svg) no-repeat;
+        background-position: 50%;
+        background-size: 100% auto;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0;
+    }
+    
+    .page-footer a {
+        color: #fff;
+    }
+    
+    .company-info p i {
+        margin-right: 6px;
+        color: #0688cc;
+    }
+    
+    .widget-footer .widget-title {
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    
+    .widget-footer .footer-menu {
+        padding-left: 15px;
+        list-style: square;
+    }
+    
+    .page-footer .social-link {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+    }
+    
+    .page-footer .social-link li {
+        margin: 0 5px;
+    }
+    
+    .page-footer .social-link a {
+        display: block;
+        background: #fff;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #00347c;
+        border-radius: 10px;
+    }

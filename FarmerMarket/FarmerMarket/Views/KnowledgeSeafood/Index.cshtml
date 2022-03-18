@@ -1,0 +1,343 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+@section styles{
+    <link rel="stylesheet" href="~/wwwroot/css/category.css">
+    <link rel="stylesheet" href="~/wwwroot/css/detail-product.css">
+    <link rel="stylesheet" href="~/wwwroot/css/sea-knowledge.css">
+
+}
+
+<div class="wrapper">
+    <div class="container-content container-fluid">
+        <div class="container-content-nav">
+            <div class="row container-content-nav-align">
+                <div class="col-lg-3 no-marign no-padding">
+                    <div class="col-menu-cat">
+                        <i class="fa-solid fa-align-left"></i>
+                        <span>Danh mục sản phẩm</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 container-content-nav-right-align">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="@Url.Action("Index","Home")">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Introduce")">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","KnowledgeSeafood")">Kiến thức hải sản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","NewBussiness")">Tin doanh nghiệp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Recruit")">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Contact")">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br>
+
+
+
+    </div>
+    <div class="block-product">
+        <p class="breadcrumb_last">
+            Home <i class="fa-solid fa-angles-right"></i> <span>Kiến thức hải sản</span>
+        </p>
+
+    </div>
+    <div class="row page-container">
+        <div class="col-md-8">
+            <h1 class="page-title ">
+                Kiến thức hải sản
+            </h1>
+            <div class="archive-description">
+                <p>
+                    Tổng hợp các bài viết chuyên sâu và công thức chế biến các loại hải sản phổ biến hiện nay!
+                </p>
+            </div>
+            <div class=" list-post-cat">
+                <div class="post">
+                    <a href="https://haisan.online/ca-ngu-bao-126442.html" class="post-thumbnail" title="Cá Ngừ Bào | Thông Tin Dinh Dưỡng, Giá Cả, Cách Sử Dụng">
+                        <img width="290" height="175" src="https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-290x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="cá ngừ bào" srcset="https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-290x175.jpg 290w, https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-300x180.jpg 300w, https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12.jpg 768w"
+                             sizes="(max-width: 290px) 100vw, 290px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/ca-ngu-bao-126442.html" title="Cá Ngừ Bào | Thông Tin Dinh Dưỡng, Giá Cả, Cách Sử Dụng">
+                            Cá Ngừ Bào | Thông Tin Dinh Dưỡng, Giá Cả, Cách Sử Dụng
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Chắc hẳn ai cũng đã từng nghe quá cá ngừ bào hoặc cá bào. Hay cá cứng như...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-gai-nuong-muoi-ot-138583.html" class="post-thumbnail" title="Mách Bạn Cách Làm Ốc Gai Nướng Muối Ớt Tại Nhà Siêu Đơn Giản">
+                        <img width="263" height="175" src="https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-6-263x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-6-263x175.jpg 263w, https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-6-300x200.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-6.jpg 768w"
+                             sizes="(max-width: 263px) 100vw, 263px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-gai-nuong-muoi-ot-138583.html" title="Mách Bạn Cách Làm Ốc Gai Nướng Muối Ớt Tại Nhà Siêu Đơn Giản">
+                            Mách Bạn Cách Làm Ốc Gai Nướng Muối Ớt Tại Nhà Siêu Đơn Giản
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc gai có rất nhiều cách chế biến. Nhưng ốc gai nướng vẫn là cách chế biến được...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/tom-he-119175.html" class="post-thumbnail" title="Tôm He: Thông Tin Chi Tiết Đặc Điểm, Giá Cả, Cách Chế Biến">
+                        <img width="255" height="175" src="https://haisan.online/wp-content/uploads/2022/01/tom-he-25-255x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/01/tom-he-25-255x175.jpg 255w, https://haisan.online/wp-content/uploads/2022/01/tom-he-25-300x206.jpg 300w, https://haisan.online/wp-content/uploads/2022/01/tom-he-25.jpg 768w"
+                             sizes="(max-width: 255px) 100vw, 255px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/tom-he-119175.html" title="Tôm He: Thông Tin Chi Tiết Đặc Điểm, Giá Cả, Cách Chế Biến">
+                            Tôm He: Thông Tin Chi Tiết Đặc Điểm, Giá Cả, Cách Chế Biến
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Hiện nay có rất nhiều loại tôm được bày bán trên thị trường hải sản. Trong đó không...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-lam-gi-ngon-139239.html" class="post-thumbnail" title="Ốc Móng Tay Làm Gì Ngon? Tổng Hợp 06 Cách Chế Biến Dành Cho Bạn">
+                        <img width="175" height="175" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-175x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11.jpg 768w"
+                             sizes="(max-width: 175px) 100vw, 175px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-lam-gi-ngon-139239.html" title="Ốc Móng Tay Làm Gì Ngon? Tổng Hợp 06 Cách Chế Biến Dành Cho Bạn">
+                            Ốc Móng Tay Làm Gì Ngon? Tổng Hợp 06 Cách Chế Biến Dành Cho Bạn
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc móng tay luôn là loài thực phẩm đứng đầu được nhiều người tin tưởng lựa chọn bởi...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-xao-sa-ot-139153.html" class="post-thumbnail" title="Ốc Móng Tay Xào Sả Ớt | Công Thức Chế Biến Tại Nhà Siêu Chuẩn">
+                        <img width="290" height="147" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8-290x147.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8-290x147.jpg 290w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8-300x152.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8.jpg 768w"
+                             sizes="(max-width: 290px) 100vw, 290px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-sa-ot-139153.html" title="Ốc Móng Tay Xào Sả Ớt | Công Thức Chế Biến Tại Nhà Siêu Chuẩn">
+                            Ốc Móng Tay Xào Sả Ớt | Công Thức Chế Biến Tại Nhà Siêu Chuẩn
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc móng tay luôn là loại ốc biển được nhiều người yêu thích trong thực đơn mỗi gia...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-xao-rau-muong-138921.html" class="post-thumbnail" title="Ốc Móng Tay Xào Rau Muống | Công Thức Chế Biến Ai Cũng Ghiền">
+                        <img width="263" height="175" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5-263x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5-263x175.jpg 263w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5-300x200.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-rau-muong-5.jpg 768w"
+                             sizes="(max-width: 263px) 100vw, 263px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-rau-muong-138921.html" title="Ốc Móng Tay Xào Rau Muống | Công Thức Chế Biến Ai Cũng Ghiền">
+                            Ốc Móng Tay Xào Rau Muống | Công Thức Chế Biến Ai Cũng Ghiền
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc móng tay với nhiều công thức chế biến luôn là một trong những món ăn "đỉnh của...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-xao-me-chua-ngot-138923.html" class="post-thumbnail" title="Bật Mí Cách Làm Ốc Móng Tay Xào Me Chua Ngọt Tại Nhà">
+                        <img width="258" height="175" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2-258x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2-258x175.jpg 258w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2-300x204.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-me-chua-ngot-2.jpg 768w"
+                             sizes="(max-width: 258px) 100vw, 258px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-me-chua-ngot-138923.html" title="Bật Mí Cách Làm Ốc Móng Tay Xào Me Chua Ngọt Tại Nhà">
+                            Bật Mí Cách Làm Ốc Móng Tay Xào Me Chua Ngọt Tại Nhà
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc móng tay là loài ốc biển được nhiều người dân tin dùng bởi độ tươi ngon và...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-xao-139237.html" class="post-thumbnail" title="Top 10 Cách Chế Biến Ốc Móng Tay Xào Thơm Ngon Đặc Sắc Nhất">
+                        <img width="290" height="164" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-15-290x164.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-15-290x164.jpg 290w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-15-300x169.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-15.jpg 768w"
+                             sizes="(max-width: 290px) 100vw, 290px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-139237.html" title="Top 10 Cách Chế Biến Ốc Móng Tay Xào Thơm Ngon Đặc Sắc Nhất">
+                            Top 10 Cách Chế Biến Ốc Móng Tay Xào Thơm Ngon Đặc Sắc Nhất
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc móng tay, loại ốc biển thuộc top đầu yêu thích nhất hiện nay. Ốc móng tay được...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-voi-voi-lam-mon-gi-ngon-139215.html" class="post-thumbnail" title="Một Vài Gợi Ý Ốc Vòi Voi Làm Món Gì Ngon Dành Cho Bạn">
+                        <img width="270" height="175" src="https://haisan.online/wp-content/uploads/2022/02/oc-voi-voi-lam-mon-gi-ngon-12-270x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-voi-voi-lam-mon-gi-ngon-12-270x175.jpg 270w, https://haisan.online/wp-content/uploads/2022/02/oc-voi-voi-lam-mon-gi-ngon-12-300x194.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-voi-voi-lam-mon-gi-ngon-12.jpg 768w"
+                             sizes="(max-width: 270px) 100vw, 270px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-voi-voi-lam-mon-gi-ngon-139215.html" title="Một Vài Gợi Ý Ốc Vòi Voi Làm Món Gì Ngon Dành Cho Bạn">
+                            Một Vài Gợi Ý Ốc Vòi Voi Làm Món Gì Ngon Dành Cho Bạn
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Trong vô số các loại ốc biển, ốc vòi voi là loài có ngoại hình và cấu trúc...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-xao-bo-toi-139140.html" class="post-thumbnail" title="Hướng Dẫn Làm Ốc Móng Tay Xào Bơ Tỏi Đơn Giản Tại Nhà">
+                        <img width="175" height="175" src="https://haisan.online/wp-content/uploads/2022/02/meta.vn_-175x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/meta.vn_-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/02/meta.vn_-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/meta.vn_-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/02/meta.vn_.jpg 768w"
+                             sizes="(max-width: 175px) 100vw, 175px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-bo-toi-139140.html" title="Hướng Dẫn Làm Ốc Móng Tay Xào Bơ Tỏi Đơn Giản Tại Nhà">
+                            Hướng Dẫn Làm Ốc Móng Tay Xào Bơ Tỏi Đơn Giản Tại Nhà
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc móng tay là loài ốc biển được nhiều người lựa chọn tin dùng bởi độ tươi ngon...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-hap-139170.html" class="post-thumbnail" title="#4 Cách Làm Ốc Móng Tay Hấp Thơm Ngon Hấp Dẫn">
+                        <img width="290" height="163" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-hap-6-290x163.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-hap-6-290x163.jpg 290w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-hap-6-300x169.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-hap-6.jpg 768w"
+                             sizes="(max-width: 290px) 100vw, 290px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-hap-139170.html" title="#4 Cách Làm Ốc Móng Tay Hấp Thơm Ngon Hấp Dẫn">
+                            #4 Cách Làm Ốc Móng Tay Hấp Thơm Ngon Hấp Dẫn
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Ốc biển gồm nhiều loại và mỗi loại đều có đa dạng cách chế biến khác nhau. Đặc...
+                    </p>
+                </div>
+                <div class="post">
+                    <a href="https://haisan.online/oc-mong-tay-xao-sate-139158.html" class="post-thumbnail" title="Ốc Móng Tay Xào Sate Ngon Tuyệt Đỉnh Với Công Thức Siêu Đơn Giản">
+                        <img width="259" height="175" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-sate-5-259x175.jpg" class="attachment-blog-size size-blog-size wp-post-image" alt="ốc móng tay xào sa tế" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-sate-5-259x175.jpg 259w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-sate-5-300x202.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-sate-5.jpg 768w"
+                             sizes="(max-width: 259px) 100vw, 259px">
+                    </a>
+
+                    <h2 class="post-title">
+                        <a href="https://haisan.online/oc-mong-tay-xao-sate-139158.html" title="Ốc Móng Tay Xào Sate Ngon Tuyệt Đỉnh Với Công Thức Siêu Đơn Giản">
+                            Ốc Móng Tay Xào Sate Ngon Tuyệt Đỉnh Với Công Thức Siêu Đơn Giản
+                        </a>
+                    </h2>
+
+                    <p class="post-excerpt">
+                        Trong các loại ốc biển, ốc móng tay là chế biến nhanh và tiện nhất. Đặc biệt chúng...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar sidebar-single-product col-md-4 order-3 order-md-2 order-3">
+            <div class="widget widget-recent-post">
+                <div class="widget-title">
+                    Tin gần đây
+                </div>
+                <div class="widget-body">
+                    <div class="list-post">
+                        <div class="post">
+                            <a href="https://haisan.online/ca-ngu-bao-126442.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="cá ngừ bào" loading="lazy">
+                            </a>
+                            <h4 class="post-title">
+                                <a href="https://haisan.online/ca-ngu-bao-126442.html">
+                                    Cá Ngừ Bào | Thông Tin Dinh Dưỡng, Giá Cả, Cách Sử Dụng
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="post">
+                            <a href="https://haisan.online/oc-gai-nuong-muoi-ot-138583.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-6-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                            </a>
+                            <h4 class="post-title">
+                                <a href="https://haisan.online/oc-gai-nuong-muoi-ot-138583.html">
+                                    Mách Bạn Cách Làm Ốc Gai Nướng Muối Ớt Tại Nhà Siêu Đơn Giản
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="post">
+                            <a href="https://haisan.online/tom-he-119175.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/01/tom-he-25-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                            </a>
+                            <h4 class="post-title">
+                                <a href="https://haisan.online/tom-he-119175.html">
+                                    Tôm He: Thông Tin Chi Tiết Đặc Điểm, Giá Cả, Cách Chế Biến
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="post">
+                            <a href="https://haisan.online/oc-mong-tay-lam-gi-ngon-139239.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-150x150.jpg 150w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-300x300.jpg 300w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11-175x175.jpg 175w, https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11.jpg 768w"
+                                     sizes="(max-width: 150px) 100vw, 150px">
+                            </a>
+                            <h4 class="post-title">
+                                <a href="https://haisan.online/oc-mong-tay-lam-gi-ngon-139239.html">
+                                    Ốc Móng Tay Làm Gì Ngon? Tổng Hợp 06 Cách Chế Biến Dành Cho Bạn
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="post">
+                            <a href="https://haisan.online/oc-mong-tay-xao-sa-ot-139153.html" class="post-thumbnail">
+                                <img width="150" height="150" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                            </a>
+                            <h4 class="post-title">
+                                <a href="https://haisan.online/oc-mong-tay-xao-sa-ot-139153.html">
+                                    Ốc Móng Tay Xào Sả Ớt | Công Thức Chế Biến Tại Nhà Siêu Chuẩn
+                                </a>
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="widget widget-menu sticky">
+                <div class="widget-title">
+                    Chuyên mục
+                </div>
+                <ul id="menu-chuyen-muc" class="list-cat-side">
+                    <li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="https://haisan.online/cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li>
+                    <li id="menu-item-283" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-283"><a href="https://haisan.online/kien-thuc">Kiến thức hải sản</a></li>
+                    <li id="menu-item-284" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-284"><a href="https://haisan.online/tin-khuyen-mai">Tin khuyến mãi</a></li>
+                    <li id="menu-item-285" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-285"><a href="https://haisan.online/tin-doanh-nghiep">Tin doanh nghiệp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

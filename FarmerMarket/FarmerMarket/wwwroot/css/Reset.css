@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=Roboto:wght@100;300;400&family=Work+Sans:wght@100;200;300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --bg-color: #0688cc;
+    --text-color: #212529;
+    --bg-color-bold: #00347c;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.no-marign {
+    margin: 0px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.fa-search {
+    color: var(--bg-color-bold);
+}
+
+#btn_search {
+    outline: none;
+}
+
+#btn_search:hover {
+    background-color: red !important;
+}
+
+#btn_search:hover .fa-search {
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+.block-image{
+    width:100%;
+
+}
+.block-image img{
+    width: 100%;
+}
+.btn_readmore{
+    display: inline-block;
+    background: #0688cc;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+.bussiness{
+    margin-bottom: 100px;
+}

@@ -1,0 +1,169 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+@section styles{
+    <link rel="stylesheet" href="~/wwwroot/css/tuyendung.css">
+    <link rel="stylesheet" href="~/wwwroot/css/chitiettintuc.css">
+}
+
+<div class="wrapper">
+
+    <div class="container-content container-fluid">
+        <div class="container-content-nav">
+            <div class="row container-content-nav-align">
+                <div class="col-lg-3 no-marign no-padding">
+                    <div class="col-menu-cat">
+                        <i class="fa-solid fa-align-left"></i>
+                        <span>Danh mục sản phẩm</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 container-content-nav-right-align">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="@Url.Action("Index","Home")">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Introduce")">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","KnowledgeSeafood")">Kiến thức hải sản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","NewBussiness")">Tin doanh nghiệp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Recruit")">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Contact")">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div>
+        <p>Home -> Tuyển dụng</p>
+        <hr>
+        <h3>TUYỂN DỤNG</h3>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="job">
+                    <h5>Tuyển Dụng Nhân Viên Social Media Part-time</h5>
+                    <p>
+                        <span class="info"><i class="fa-solid fa-location-dot"></i>20 ngõ 28 Nguyễn Khả Trạc, Cầu Giấy, Hà Nội</span>
+                        <span class="info"><i class="fa-solid fa-clock-rotate-left"></i>Bán thời gian</span>
+                        <span class="info"><i class="fa-solid fa-money-bill-1-wave"></i>Mức lương: 2.5 triệu</span>
+                    </p>
+                    <p>Lên kế hoạch đăng đăng bài viết ngày cho các mạng xã hội. Phát triển nội dung dựa trên các trending hiện tại. Tương tác, quản lý thông tin, phản...</p>
+                    <a href="#">Xem chi tiết</a>
+                    <hr>
+                </div>
+                <div class="job">
+                    <h5>Tuyển Dụng Nhân Viên Content Marketing Part-time</h5>
+                    <p>
+                        <span class="info"><i class="fa-solid fa-location-dot"></i>20 ngõ 28 Nguyễn Khả Trạc, Cầu Giấy, Hà Nội</span>
+                        <span class="info"><i class="fa-solid fa-clock-rotate-left"></i>Bán thời gian</span>
+                        <span class="info"><i class="fa-solid fa-money-bill-1-wave"></i>Mức lương: 2.5 triệu</span>
+                    </p>
+                    <p>Triển khai nội dung bài viết trên Website dựa trên chủ đề Du Lịch và Dịch vụ Du Lịch cho trước. Chỉnh sửa, cập nhật nội dung thông tin mới...</p>
+                    <a href="#">Xem chi tiết</a>
+                    <hr>
+                </div>
+                <div class="job">
+                    <h5>Tuyển Dụng Nhân Viên Chăm Sóc Khách Hàng</h5>
+                    <p>
+                        <span class="info"><i class="fa-solid fa-location-dot"></i>20 ngõ 28 Nguyễn Khả Trạc, Cầu Giấy, Hà Nội</span>
+                        <span class="info"><i class="fa-solid fa-clock-rotate-left"></i>Toàn thời gian</span>
+                        <span class="info"><i class="fa-solid fa-money-bill-1-wave"></i>Mức lương: Trên 6 triệu</span>
+                    </p>
+                    <p>Nhân viên CSKH tư vấn dịch vụ khách hàng. Xác nhận, chủ động liên hệ để sắp xếp lịch hẹn với khách hàng.</p>
+                    <a href="#">Xem chi tiết</a>
+                    <hr>
+                </div>
+                <div class="job">
+                    <h5>Tuyển Dụng Nhân Viên Giao Hàng Thực Phẩm Tươi</h5>
+                    <p>
+                        <span class="info"><i class="fa-solid fa-location-dot"></i>20 ngõ 28 Nguyễn Khả Trạc, Cầu Giấy, Hà Nội</span>
+                        <span class="info"><i class="fa-solid fa-clock-rotate-left"></i>Toàn thời gian</span>
+                        <span class="info"><i class="fa-solid fa-money-bill-1-wave"></i>Mức lương: từ 8-10 triệu</span>
+                    </p>
+                    <p>Giao hàng theo địa chỉ trên đơn hàng. Cập nhật tình trạng đơn hàng, thông báo tình trạng đơn hàng trên hệ thống. Thu COD khi giao</p>
+                    <a href="#">Xem chi tiết</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-4 widget-footer">
+                <div style="height:auto; padding: 20px 10px; box-shadow: 1px 7px 11px -4px #7f8fa6;">
+                    <div class="row">
+                        <h5><b>TIN GẦN ĐÂY</b></h5>
+                        <div class="col-lg-5 block-img">
+                            <img class="wp-image-133230 aligncenter" src="https://haisan.online/wp-content/uploads/2022/03/ca-ngu-bao-12-150x150.jpg" alt="haisan.online banner" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p style="font-weight: bold;">
+                                Cá Ngừ Bào | Thông Tin Dinh Dưỡng, Giá Cả, Cách Sử Dụng
+                            </p>
+                        </div>
+                        <div class="col-lg-5 block-img">
+                            <img class="wp-image-133230 aligncenter" src="https://haisan.online/wp-content/uploads/2022/02/oc-gai-nuong-muoi-ot-7.jpg" alt="haisan.online banner" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p style="font-weight: bold;">
+                                Mách Bạn Cách Làm Ốc Gai Nướng Muối Ớt Tại Nhà Siêu Đơn Giản
+                            </p>
+                        </div>
+                        <div class="col-lg-5 block-img">
+                            <img class="wp-image-133230 aligncenter" src="https://haisan.online/wp-content/uploads/2022/01/tom-he-25-150x150.jpg" alt="haisan.online banner" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p style="font-weight: bold;">
+                                Tôm He: Thông Tin Chi Tiết Đặc Điểm, Giá Cả, Cách Chế Biến
+                            </p>
+                        </div>
+                        <div class="col-lg-5 block-img">
+                            <img class="wp-image-133230 aligncenter" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-lam-mon-gi-ngon-11.jpg" alt="haisan.online banner" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p style="font-weight: bold;">
+                                Ốc Móng Tay Làm Gì Ngon? Tổng Hợp 06 Cách Chế Biến Dành Cho Bạn
+                            </p>
+                        </div>
+                        <div class="col-lg-5 block-img">
+                            <img class="wp-image-133230 aligncenter" src="https://haisan.online/wp-content/uploads/2022/02/oc-mong-tay-xao-bo-toi-8-1.jpg" alt="haisan.online banner" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p style="font-weight: bold;">
+                                Ốc Móng Tay Xào Sả Ớt | Công Thức Chế Biến Tại Nhà Siêu Chuẩn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ghim" style="height:300px; padding: 20px 10px; box-shadow: 1px 7px 11px -4px #7f8fa6;margin-top: 50px;">
+                    <h5><b>CHUYÊN MỤC</b></h5>
+
+                    <ul id="menu-chinh-sach" class="footer-menu">
+                        <br>
+                        <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304"><a style="color: #000" href="#"><b>Câu hỏi thường gặp</b></a></li>
+
+                        <hr>
+                        <li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a style="color: #000" href="#"><b>Kiến thức hải sản</b></a></li>
+
+                        <hr>
+                        <li id="menu-item-133334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-133334"><a style="color: #000" href="#"><b>Tin khuyến mãi</b></a></li>
+
+                        <hr>
+                        <li id="menu-item-133333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133333"><a style="color: #000" href="#"><b>Tin doanh nghiệp</b></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
